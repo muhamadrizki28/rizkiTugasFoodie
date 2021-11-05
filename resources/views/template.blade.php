@@ -20,9 +20,9 @@
                     <li><a href="">Detail Menu</a></li>
                 </ul>
             </nav>
-            {{-- $slot --}}
-            @yield('content')
         </section>
+        {{-- $slot --}}
+        @yield('content')
     </header>
     <main>
     </main>
