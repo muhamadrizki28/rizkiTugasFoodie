@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #b91646;
+    --bg-color: #cee5d0;
+}
+body {
+    background-color: var(--bg-color);
+}
+header {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+}
+header > section {
+    max-width: 100%;
+    height: 4rem;
+    background-color: var(--main-color);
+    border-bottom: 2px solid gray;
+}
+header > section nav {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    padding: 0 2rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+nav ul li::after {
+    content: "";
+    width: 6%;
+    border-radius: 50%;
+    margin: auto;
+    height: 0.2rem;
+    display: block;
+    background-color: #fff;
+}
+nav ul li:hover::after {
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
+nav h2 {
+    color: #fff;
+    cursor: default;
+}
+
+/* Footer */
+footer {
+    max-width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-top: 2px solid gray;
+}
+footer > section {
+    position: relative;
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .text-logo {
+    color: #fff;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1rem;
+    transition: box-shadow 0.5s ease-in-out;
+}
+footer .text-logo:hover {
+    text-align: center;
+    box-shadow: 0 0 10px 10px gray;
+}
+footer .teks-menu {
+    display: flex;
+    color: #fff;
+    opacity: 0.7;
+}
+.teks-menu h2 {
+    text-align: center;
+    margin-right: 4rem;
+}
+.teks-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+.teks-menu ul li {
+    list-style: georgian;
+}
+.teks-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+footer > section .create {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+/* Akhir Footer */
+/* Design ScrollBar */
+::-webkit-scrollbar {
+    width: 11px;
+}
+/* ::-webkit-scrollbar:hover {
+    width: 24px;
+} */
+::-webkit-scrollbar-track {
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px 0 black;
+}
+/* Akhir Design ScrollBar */
