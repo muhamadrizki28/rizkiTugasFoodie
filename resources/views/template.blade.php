@@ -7,6 +7,7 @@
     <title>Foodie</title>
     <link rel="stylesheet" href="assets/styles/style.css">
     @yield('list')
+    @yield('detail')
     {{-- $detail ?? "" --}}
 </head>
 <body>

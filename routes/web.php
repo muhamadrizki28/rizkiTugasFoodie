@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,4 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-// Buat Dibawah
+
+Route::get('post/{detail}', function($detail){ 
+    $post = Post::find($detail); 
+
+    return view('detail',[
+        'post' => $post
+    ]);
+})->where('detail','[A-z\-_]+'); 
